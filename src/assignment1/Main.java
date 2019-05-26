@@ -12,13 +12,13 @@ public class Main extends Application {
 
     public static Stage mainStage;
 
-    public static ArrayList<String> studentList = new ArrayList<>();
+    public static ArrayList<Student> studentList = new ArrayList<>();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         mainStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("addStudent.fxml"));
-        primaryStage.setTitle("STUDENTS MANAGEMENT");
+        primaryStage.setTitle("ASM1 - STUDENTS MANAGEMENT");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
