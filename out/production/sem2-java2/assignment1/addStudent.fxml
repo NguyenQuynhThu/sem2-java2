@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment1.Student" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtName" layoutX="174.0" layoutY="56.0" prefHeight="27.0" prefWidth="252.0" promptText="Name" />
+      <TextField fx:id="txtAge" layoutX="174.0" layoutY="123.0" prefHeight="27.0" prefWidth="252.0" promptText="Age" />
+      <TextField fx:id="txtMark" layoutX="174.0" layoutY="200.0" prefHeight="27.0" prefWidth="252.0" promptText="Mark" />
+      <Button onAction="#addStudent" layoutX="271.0" layoutY="294.0" mnemonicParsing="false" text="Submit" />
+      <Hyperlink onAction="#toListPane" layoutX="448.0" layoutY="343.0" text="Go to Student List &gt;&gt;" />
+   </children>
+</Pane>

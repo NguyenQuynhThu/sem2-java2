@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="assignment1.StudentList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="txtList" layoutX="68.0" layoutY="94.0" prefHeight="278.0" prefWidth="476.0" />
+      <Hyperlink onAction="#toAdd" layoutX="21.0" layoutY="22.0" text="&lt;&lt; Back" />
+      <Button layoutX="437.0" layoutY="47.0" mnemonicParsing="false" text="Order by mark" />
+   </children>
+</Pane>
