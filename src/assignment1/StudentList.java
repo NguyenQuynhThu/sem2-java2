@@ -39,14 +39,39 @@ public class StudentList implements Initializable {
         }
     }
 
-    public void order() {
-        String str2 ="";
-        Collections.sort(Main.studentList, new AgeComparator());
-        for (Student s : Main.studentList) {
-            String st = "Name: "+s.name + " - Age: " +s.age+ " - Mark: " + s.mark;
-            str2 += (st+ "\n");
+    class AgeComparator2 implements Comparator<Student> {
+        public int compare(Student s1, Student s2) {
+            if (s1.mark == s2.mark)
+                return 0;
+            else if (s1.mark < s2.mark)
+                return 1;
+            else
+                return -1;
         }
-        txtList.setText(str2);
+    }
+
+    boolean orderDone = true;
+
+    public void order() {
+        if(orderDone){
+            String str2 ="";
+            Collections.sort(Main.studentList, new AgeComparator());
+            for (Student s : Main.studentList) {
+                String st = "Name: "+s.name + " - Age: " +s.age+ " - Mark: " + s.mark;
+                str2 += (st+ "\n");
+            }
+            txtList.setText(str2);
+        } else {
+            String str2 ="";
+            Collections.sort(Main.studentList, new AgeComparator2());
+            for (Student s : Main.studentList) {
+                String st = "Name: "+s.name + " - Age: " +s.age+ " - Mark: " + s.mark;
+                str2 += (st+ "\n");
+            }
+            txtList.setText(str2);
+        }
+        orderDone = !orderDone;
+
     }
 
 
