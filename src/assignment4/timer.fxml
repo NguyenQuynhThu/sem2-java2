@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment4.TimerController">
+   <children>
+      <Button layoutX="218.0" layoutY="59.0" mnemonicParsing="false" onAction="#runTimer" text="START">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtTimer" layoutX="141.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.55" prefHeight="200.0" prefWidth="318.0" promptText="10:00">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </TextArea>
+   </children>
+</Pane>
