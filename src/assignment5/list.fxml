@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5.List">
+   <children>
+      <TableView fx:id="tblView" layoutX="27.0" layoutY="56.0" prefHeight="314.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="colUsername" prefWidth="170.0" text="USERNAME" />
+            <TableColumn fx:id="colEmail" prefWidth="165.0" text="EMAIL" />
+            <TableColumn fx:id="colPassword" minWidth="0.0" prefWidth="110.0" text="PASSWORD" />
+            <TableColumn fx:id="colEdit" minWidth="0.0" prefWidth="61.0" text="EDIT" />
+        </columns>
+      </TableView>
+      <Hyperlink layoutX="21.0" layoutY="14.0" onAction="#home" text="&lt;&lt; Back to Home" />
+      <Hyperlink layoutX="510.0" layoutY="14.0" onAction="#register" text="Register &gt;&gt;" />
+   </children>
+</Pane>

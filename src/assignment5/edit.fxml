@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5.Edit">
+   <children>
+      <TextField fx:id="txtUsername" layoutX="87.0" layoutY="67.0" prefHeight="27.0" prefWidth="426.0" promptText="Username" />
+      <TextField fx:id="txtEmail" layoutX="87.0" layoutY="126.0" prefHeight="27.0" prefWidth="426.0" promptText="Email" />
+      <Button layoutX="271.0" layoutY="275.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <PasswordField fx:id="txtPassword" layoutX="85.0" layoutY="187.0" prefHeight="27.0" prefWidth="426.0" promptText="Password" />
+      <Hyperlink onAction="#home" layoutX="14.0" layoutY="14.0" text="&lt;&lt; Back to Home" />
+      <Hyperlink onAction="#goToList" layoutX="491.0" layoutY="354.0" text="Go to List &gt;&gt;" />
+   </children>
+</Pane>
